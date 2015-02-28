@@ -17,7 +17,7 @@ python alarmsystem.py away
 ##### Turn alarm OFF
 python alarmsystem.py off
 
-### Raspberry PI Setup
+## Raspberry PI Setup
 
 You need to create a <b>cron job</b> that will run the alarmsystem.py script on a predefined schedule.  You also have to make sure the <b>cron job</b> starts automatically when the raspberry pi bootup.
 
@@ -50,3 +50,22 @@ Start cron service by running /etc/init.d/cron start
 ```
 root@raspberrypi:/home/pi# /etc/init.d/cron start
 ```
+
+Last step is to run the cron job at startup. Edit the <b>/etc/rc.local</b> file and add the following line <b>/etc/init.d/cron/start</b> be sure to add it before the `exit 0`.
+
+```
+root@raspberrypi:/home/pi# nano /etc/rc.local
+```
+
+Copy and Paste the following command at the bottom of this file, right before exit 0.
+```
+/etc/init.d/cron start
+```
+Hold control + X to exit, you will be prompted to save the changes, press Y to save it. and then return key to close.
+
+You should restart your raspberry pi
+```
+root@raspberrypi:/home/pi# sudo reboot
+```
+
+Done!
