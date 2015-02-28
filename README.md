@@ -39,7 +39,7 @@ Now run the command crontab -e, this will launch the <b>nano editor</b> with an 
 root@raspberrypi:/home/pi# crontab -e
 ```
 
-Copy and paste the following entry. This cron job will run the script at 11:00PM to activate it and at 6:00AM to deactivate it. You can change this schedule to fit your needs.
+Copy and paste the following entry. This cron job will run the script at 11:00PM to activate it and at 6:00AM to deactivate it. You can change this schedule to fit your needs. You can find some good cron job tips here. [15 Awesome Cron Job Examples](http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples)
 ```
 00 23 * * * /usr/bin/python /home/pi/alarm/alarmsystem.py home >/home/pi/alarm/script.log 2>&1
 00 06 * * * /usr/bin/python /home/pi/alarm/alarmsystem.py off >/home/pi/alarm/script.log 2>&1
