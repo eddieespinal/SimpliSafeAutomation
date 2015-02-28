@@ -21,6 +21,11 @@ python alarmsystem.py off
 
 You need to create a <b>cron job</b> that will run the alarmsystem.py script on a predefined schedule.  You also have to make sure the <b>cron job</b> starts automatically when the raspberry pi bootup.
 
+Clone this repository into a folder called alarm
+```
+pi@raspberry ~ $ git clone https://github.com/eddieespinal/SimpliSafeAutomation.git alarm
+```
+
 #### Create the cron job
 Assuming you are already logged in as 'pi' user on your raspberry pi.
 
