@@ -38,7 +38,7 @@ default_alarm_state = 'home'
 
 # You can generate a new device UUID from this website
 # https://www.uuidgenerator.net
-device_uuid = '6237485b-4ad7-72e5-b529-c7ff9e229d0a&version=1666'
+device_uuid = '6237485b-4ad7-72e5-b529-c7ff9e229d0a'
 device_name = 'John iPhone 6' #this could be anything e.g. John iPhone 6
 
 #****************| DO NOT EDIT BELOW THIS LINE |**********************
