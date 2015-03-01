@@ -3,6 +3,12 @@
 # Developed by: Eddie Espinal
 # February 27, 2015
 # ====================================================================
+# Special thanks to Scott Newman from (http://www.leftovercode.info)
+# for creating a great post about the SimpliSafe API which helped me a lot
+# building this automation script.
+# http://www.leftovercode.info/simplisafe.php
+# 
+# ====================================================================
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
