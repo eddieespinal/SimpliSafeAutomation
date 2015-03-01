@@ -1,7 +1,2 @@
-MAIL=youremailhere@gmail.com
-
-# Turn OFF alarm at 6 AM every day.
-00 06 * * * /home/pi/alarmsystem.py off
-
-# Turn ON alarm at 12 AM every day.
-00 00 * * * /home/pi/alarmsystem.py home
+00 23 * * * /usr/bin/python /home/pi/alarm/alarmsystem.py home >/home/pi/alarm/script.log 2>&1
+00 06 * * * /usr/bin/python /home/pi/alarm/alarmsystem.py off >/home/pi/alarm/script.log 2>&1
