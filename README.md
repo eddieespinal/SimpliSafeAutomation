@@ -75,4 +75,9 @@ You should restart your raspberry pi
 root@raspberrypi:/home/pi# sudo reboot
 ```
 
+Don't forget to change the timezone on your raspberry pi. The following link will show you how to do it.
+```
+[Configure Timezone](https://www.raspberrypi.org/documentation/configuration/raspi-config.md)
+```
+
 Done!
